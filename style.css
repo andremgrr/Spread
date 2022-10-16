@@ -17,7 +17,50 @@
   
       --main-heading: calc(var(--body-copy) * 4);
       --sub-heading: calc(var(--body-copy) * 2);  
-    }s
+    }
+
+  }
+
+html, body {
+    margin: 0;
+    padding: 0;
+  }
+    
+
+/* scrolling */
+
+  .container {
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    height: 100vh;
+    scroll-padding: 100px;
+  }
+
+  .section {
+    width: 60%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    scroll-snap-align: start;
+  }
+
+  /* nav */
+
+  nav {
+    margin: 10px;
+    position: relative;
+    width: 1500px;
+    font-size: 13px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  nav a {
+    line-height: 20px;
+    height: 100%;
+    display: inline-block;
+    position: sticky;x
+    
   }
 
   
