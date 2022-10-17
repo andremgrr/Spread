@@ -39,7 +39,9 @@ html, body {
     justify-content: flex-start;
     scroll-snap-type: y mandatory;
     overflow-y: scroll;
-    height: 100vh;
+    width: 70vw;
+    margin-left: auto;
+    margin-right: auto;
     scroll-padding: 0px;
   }
 
@@ -68,10 +70,21 @@ html, body {
 
   nav a {
     line-height: 20px;
-    height: 100%;
+    height: 50%;
     display: inline-block;
     position: sticky;x
   }
+
+  /* viewport */
+
+  .box-transparent {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    background-color: rgba(100, 100, 100, 0.6);
+    border: 3px solid black;
+    padding: 20px;
+}
 
   
   body {
