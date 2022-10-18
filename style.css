@@ -25,6 +25,13 @@
 
   }
 
+/* Typography */
+
+@font-face {
+	font-family: 'Allenoire';
+	src: url('Allenoire Font.otf') format('opentype');
+ }
+
 html, body {
     margin: 0;
     padding: 0;
@@ -103,7 +110,8 @@ html, body {
   }
   
   h1 {
-    font-size: var(--main-heading);
+    font-size: calc(var(--main-heading) * 1.5);
+    font-family: 'Allenoire';
   }
   
   h2 {
