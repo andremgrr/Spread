@@ -1,7 +1,7 @@
 /* code for mobile */
 
 :root {
-    --body-copy: 16px;
+    --body-copy: 12px;
     --page-spacing: 24px;
 
     --background-color: white;
@@ -15,12 +15,14 @@
   @media (min-width: 768px) {
     :root {
       --body-copy: 20px;
-      --page-spacing: 48px;
+      --page-spacing: 24px;
 
       --background-color: rgb(255, 255, 255);
   
       --main-heading: calc(var(--body-copy) * 4);
       --sub-heading: calc(var(--body-copy) * 2);  
+
+      --margin-spacing: 10%
     }
 
   }
@@ -31,6 +33,13 @@
 	font-family: 'Allenoire';
 	src: url('Allenoire Font.otf') format('opentype');
  }
+
+ @font-face {
+	font-family: 'Questrial';
+	src: url('Questrial-Regular.otf') format('opentype');
+ }
+ @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300&display=swap');
+
 
 html, body {
     margin: 0;
@@ -47,10 +56,11 @@ html, body {
     scroll-snap-type: y mandatory;
     overflow-y: scroll;
     border: 3px solid black;
-    width: 70vw;
-    height: 70vh;
+    width: 85vw;
+    height: 75vh;
     margin-left: auto;
     margin-right: auto;
+    margin-top: calc(var(--margin-spacing) * 0.2);
     scroll-padding: 0px;
   }
 
@@ -63,6 +73,8 @@ html, body {
     width: 75vw;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 0;
+    margin-bottom: 0;
     padding: 20px;
   }
 
@@ -70,11 +82,14 @@ html, body {
 
   nav {
     display: flex;
+    flex-direction: row;
     position: relative;
     width: 80%;
     align-items: center;
     justify-content: space-around;
-    font-size: 13px;
+    font-size: calc(var(--body-copy) * 0.65);
+    margin-left: auto;
+    margin-right: auto;
   }
 
   nav a {
@@ -82,6 +97,7 @@ html, body {
     height: 50%;
     display: inline-block;
     position: sticky;x
+    
   }
 
   /* viewport */
@@ -90,7 +106,7 @@ html, body {
     position: fixed;
     width: 80vw;
     background-color: none;
-    border: 3px solid black;
+    border: 2px solid black;
     padding: 20px;
     margin-left: auto;
     margin-right: auto;
@@ -110,12 +126,22 @@ html, body {
   }
   
   h1 {
-    font-size: calc(var(--main-heading) * 1.5);
+    font-size: calc(var(--main-heading) * 1.4);
     font-family: 'Allenoire';
+    letter-spacing: 0.05em;
+    margin-top: 5%;
+    margin-bottom: 0;
   }
   
   h2 {
     font-size: var(--sub-heading);
+  }
+
+  h3 {
+    font-size: calc(var(--sub-heading) *0.6 );
+    font-family: 'Inter', sans-serif;
+    font-weight: 100;
+    letter-spacing: 0.2em;
   }
   
   header,
@@ -128,10 +154,27 @@ html, body {
     flex-direction: column;
     gap: calc(var(--page-spacing) * 2);
   }
-  
-  @media (min-width: 768px) {
-    header {
-      flex-direction: row;
-      justify-content: space-between;
-    }
+
+  .Title-box {
+    border-left: 2px solid black;
+    margin-top: calc(var(--page-spacing) * 2);
+    margin-left: calc(var(--margin-spacing) * 1);
+  }
+
+  .paragraph-head {
+    font-family: 'Inter', sans-serif;
+    font-weight: 100;
+    font-size: calc(var(--sub-heading) *0.45);
+    letter-spacing: 0.1em;
+    padding-left: calc(var(--page-spacing) * 3);
+    padding-top: calc(var(--margin-spacing) * 0.5);
+  }
+
+  .sub-paragraph {
+    text-transform: uppercase;
+    font-family: 'Questrial', sans-serif;
+    font-weight: 100;
+    font-size: calc(var(--sub-heading) * 1.3);
+    padding-left: calc(var(--page-spacing) * 3);
+    padding-bottom: 5%;
   }
