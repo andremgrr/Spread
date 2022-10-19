@@ -1,9 +1,13 @@
 /* code for mobile */
 
+:root {
+  --body-copy: 12px;
+  --page-spacing: 12px;
+  --line-height: 10px;
+}
+
   @media (min-width: 375px) {
     :root {
-      --body-copy: 12px;
-      --page-spacing: 12px;
   
       --background-color: white;
   
@@ -188,7 +192,7 @@ html, body {
     font-size: calc(var(--sub-heading) * 1.4);
     padding-left: calc(var(--page-spacing) * 3);
     padding-bottom: calc(var(--margin-spacing) * 0.3);
-    width: 55vw;
+    width: 65vw;
 
   }
 
