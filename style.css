@@ -55,9 +55,9 @@ html, body {
     justify-content: flex-start;
     scroll-snap-type: y mandatory;
     overflow-y: scroll;
-    border: 3px solid black;
+    border: 1px solid black;
     width: 85vw;
-    height: 75vh;
+    height: 85vh;
     margin-left: auto;
     margin-right: auto;
     margin-top: calc(var(--margin-spacing) * 0.2);
