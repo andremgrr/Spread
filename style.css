@@ -4,14 +4,16 @@
   --body-copy: 12px;
   --page-spacing: 12px;
   --line-height: 10px;
+  --page-height: 75vh;
+  --margin: 80px;
 }
 
   @media (min-width: 375px) {
     :root {
   
       --background-color: white;
-  
-      --main-heading: calc(var(--body-copy) * 3);
+      --page-width: 70vw;
+      --main-heading: calc(var(--body-copy) * 2.5);
       --sub-heading: calc(var(--body-copy) * 1.5);
     }
     
@@ -22,15 +24,25 @@
     :root {
       --body-copy: 20px;
       --page-spacing: 24px;
+      --page-width: 85vw;
 
       --background-color: rgb(255, 255, 255);
   
-      --main-heading: calc(var(--body-copy) * 4);
+      --main-heading: calc(var(--body-copy) * 3.5);
       --sub-heading: calc(var(--body-copy) * 2);  
 
       --margin-spacing: 10%
     }
 
+  }
+
+   /* Code for print */
+
+  @media print {
+    :root {
+    --body-copy: 12px;
+    --page-spacing: 24px;
+  }
   }
 /* Typography */
 
@@ -46,13 +58,24 @@
  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300&display=swap');
 
 
-html, body {
+html,body {
     margin: 0;
     padding: 0;
   }
-    
 
-/* scrolling */
+@media screen and (min-width: 375px) {
+  body { calc(var(--body-margin) * 2);
+    
+  }
+}
+
+@media screen and (min-width: 768px) {
+  body { calc(var(--body-margin) * 1);
+    
+  }
+}
+
+/* scrolling 
 
   .container {
     display: flex;
@@ -68,18 +91,20 @@ html, body {
     scroll-padding: 0px;
   }
 
+  */
+
   .section {
     width: 60%;
-    height: 75vh;
     background-size: cover;
     background-position: center;
     scroll-snap-align: start;
     width: 75vw;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 0;
+    margin-top: 20px;
     margin-bottom: 0;
     padding: 20px;
+    border: 1px solid black;
   }
 
   /* nav */
@@ -114,7 +139,7 @@ html, body {
     padding: 20px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 10%
+    margin-top: 10%;
     
 }
 
@@ -124,10 +149,18 @@ html, body {
     font-size: var(--body-copy);
     background-color: var(--background-color);
   }
+
+  @media print {
+    body {
+      border: 0;
+    }
+  }
   
   body > * {
     padding: var(--page-spacing);
   }
+
+
   
   h1 {
     font-size: calc(var(--main-heading) * 1.4);
@@ -154,7 +187,7 @@ html, body {
   p {
     font-family: 'Questrial', sans-serif;
     font-weight: 100;
-    font-size: calc(var(--sub-heading) * 0.6);
+    font-size: calc(var(--sub-heading) * 0.7);
   }
   
   header,
@@ -166,6 +199,22 @@ html, body {
     display: flex;
     flex-direction: column;
     gap: calc(var(--page-spacing) * 2);
+  }
+
+  article {
+    border: 1px solid black;
+  }
+
+  @media screen and (min-width: 375px) {
+    page-margin { calc(var(--body-margin) * 1);
+      
+    }
+  }
+  
+  @media screen and (min-width: 768px) {
+    page-margin { calc(var(--body-margin) * 1);
+      
+    }
   }
 
   /* 1st Box */
@@ -214,7 +263,7 @@ html, body {
     padding-left: calc(var(--page-spacing) * 3);
     font-family: 'Questrial', sans-serif;
     font-weight: 100;
-    font-size: calc(var(--sub-heading) * 0.45);
+    font-size: calc(var(--sub-heading) * 0.8);
     line-height: calc(var(--page-spacing) * 1.2);
   }
 
@@ -222,7 +271,7 @@ html, body {
     padding-left: calc(var(--page-spacing) * 3);
     font-family: 'Questrial', sans-serif;
     font-weight: 100;
-    font-size: calc(var(--sub-heading) * 0.45);
+    font-size: calc(var(--sub-heading) * 0.8);
     line-height: calc(var(--page-spacing) * 1.2);
     width: 65vw;
   }
