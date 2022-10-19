@@ -1,15 +1,17 @@
 /* code for mobile */
 
-:root {
-    --body-copy: 12px;
-    --page-spacing: 12px;
-
-    --background-color: white;
-
-    --main-heading: calc(var(--body-copy) * 3);
-    --sub-heading: calc(var(--body-copy) * 1.5);
+  @media (min-width: 375px) {
+    :root {
+      --body-copy: 12px;
+      --page-spacing: 12px;
+  
+      --background-color: white;
+  
+      --main-heading: calc(var(--body-copy) * 3);
+      --sub-heading: calc(var(--body-copy) * 1.5);
+    }
+    
   }
-
   /* Code for desktop */
   
   @media (min-width: 768px) {
@@ -26,7 +28,6 @@
     }
 
   }
-
 /* Typography */
 
 @font-face {
@@ -55,7 +56,6 @@ html, body {
     justify-content: flex-start;
     scroll-snap-type: y mandatory;
     overflow-y: scroll;
-    border: 1px solid black;
     width: 85vw;
     height: 85vh;
     margin-left: auto;
