@@ -5,7 +5,8 @@
   --page-spacing: 12px;
   --line-height: 10px;
   --page-height: 75vh;
-  --margin: 80px;
+  --margin-spacing: 20px;
+  
 }
 
   @media (min-width: 375px) {
@@ -57,42 +58,31 @@
  }
  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300&display=swap');
 
+ /* main components */
 
 html,body {
     margin: 0;
     padding: 0;
   }
 
-@media screen and (min-width: 375px) {
-  body { calc(var(--body-margin) * 2);
-    
-  }
-}
-
-@media screen and (min-width: 768px) {
-  body { calc(var(--body-margin) * 1);
-    
-  }
-}
-
-/* scrolling 
-
-  .container {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    scroll-snap-type: y mandatory;
-    overflow-y: scroll;
-    width: 85vw;
-    height: 85vh;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: calc(var(--margin-spacing) * 0.2);
-    scroll-padding: 0px;
+  article {
+    margin: 20px;
+    border: 1px solid black;
   }
 
-  */
+  @media screen and (min-width: 768px) {
+    article { 
+    margin: calc(var(--margin-spacing) * 0.5);
+      
+    }
+  }
 
+  @media print {
+    article {
+      border: 0;
+    }
+  }
+  
   .section {
     width: 60%;
     background-size: cover;
@@ -104,7 +94,6 @@ html,body {
     margin-top: 20px;
     margin-bottom: 0;
     padding: 20px;
-    border: 1px solid black;
   }
 
   /* nav */
@@ -128,32 +117,11 @@ html,body {
     position: sticky;x
     
   }
-
-  /* viewport */
-
-  .box-transparent {
-    position: fixed;
-    width: 80vw;
-    background-color: none;
-    border: 2px solid black;
-    padding: 20px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 10%;
-    
-}
-
   
   body {
     font-family: sans-serif;
     font-size: var(--body-copy);
     background-color: var(--background-color);
-  }
-
-  @media print {
-    body {
-      border: 0;
-    }
   }
   
   body > * {
@@ -201,22 +169,6 @@ html,body {
     gap: calc(var(--page-spacing) * 2);
   }
 
-  article {
-    border: 1px solid black;
-  }
-
-  @media screen and (min-width: 375px) {
-    page-margin { calc(var(--body-margin) * 1);
-      
-    }
-  }
-  
-  @media screen and (min-width: 768px) {
-    page-margin { calc(var(--body-margin) * 1);
-      
-    }
-  }
-
   /* 1st Box */
 
   .Title-box {
@@ -241,7 +193,7 @@ html,body {
     font-size: calc(var(--sub-heading) * 1.4);
     padding-left: calc(var(--page-spacing) * 3);
     padding-bottom: calc(var(--margin-spacing) * 0.3);
-    width: 65vw;
+    width: 60vw;
 
   }
 
@@ -274,4 +226,11 @@ html,body {
     font-size: calc(var(--sub-heading) * 0.8);
     line-height: calc(var(--page-spacing) * 1.2);
     width: 65vw;
+    margin-left: -36px;
+  }
+
+  @media screen and (min-width: 768px) {
+    .Second-Box-P { calc(var(margin-spacing) * 4);
+      
+    }
   }
