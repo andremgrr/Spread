@@ -126,7 +126,6 @@ html,body,article {
   /* 1st Box */
 
   .section-1 {
-    width: 60%;
     background-size: cover;
     background-position: center;
     scroll-snap-align: start;
@@ -194,7 +193,7 @@ html,body,article {
   .Title-box {
     border-left: 2px solid black;
     margin-top: calc(var(--page-spacing) * 2);
-    margin-left: calc(var(--margin-spacing) * 1);
+    width: 75vw;
   }
 
   .paragraph-head {
@@ -224,6 +223,11 @@ html,body,article {
   .section-2 {
     padding: calc(var(--page-spacing) * 2);
     border: 1px solid black;
+    flex-direction: column;
+    display: flex;
+    width: 75vw;
+    margin-left: auto;
+    margin-right: auto;
   }
   @media print {
     .section-2 {
@@ -232,28 +236,19 @@ html,body,article {
   }
 
   .Second-Box-Title-section {
-    width: 60%;
-    background-size: cover;
-    background-position: center;
-    scroll-snap-align: start;
     width: 75vw;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 20px;
-    margin-bottom: 0;
 
   }
 
   .Title-box-2 {
     border-left: 2px solid black;
     margin-top: calc(var(--page-spacing) * 2);
-    margin-left: calc(var(--margin-spacing) * 1);
   }
 
   .Second-Box-Header {
     padding-left: calc(var(--page-spacing) * 3);
-    padding-top: calc(var(--margin-spacing) * 0.1);
-    padding-bottom: calc(var(--margin-spacing) * 0.2);
   }
 
   .Second-Box-Subheader {
@@ -262,12 +257,12 @@ html,body,article {
     font-weight: 100;
     font-size: calc(var(--sub-heading) * 0.8);
     line-height: calc(var(--page-spacing) * 1.2);
+    width: 55vw;
   }
 
  .First-Body-2nd-Paragraph {
     flex-direction: column;
     display: flex;
-    margin-left: calc(var(--margin-spacing) * 1.5);
 
  }
 
@@ -281,23 +276,26 @@ html,body,article {
     margin-left: -36px;
   }
 
-  @media screen and (min-width: 768px) {
-    .Second-Box-P { calc(var(margin-spacing) * 4);
-    }
+  .Gradients-Second-Box {
+    Position: relative;
+    height: 10rem;
+    width: 10rem;
+    border-radius: 50%;
+    display: inline-block;
+    background: radial-gradient(#DE9C94, #EB83A0);
+    filter:blur(1.5rem);
+    align-self: flex-end;
   }
+
+
+
 
   /* 3rd Box */
 
   .section-3 {
-    width: 60%;
-    background-size: cover;
-    background-position: center;
-    scroll-snap-align: start;
     width: 75vw;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 20px;
-    margin-bottom: 0;
     padding: calc(var(--page-spacing) * 2);
     border: 1px solid black;
   }
@@ -308,27 +306,101 @@ html,body,article {
     }
   }
 
+  .Third-Box {
+    border-left: 2px solid black;
+    margin-top: calc(var(--page-spacing) * 2);
+    flex-direction: column;
+    display: flex;
+  }
+
+
   .Third-Box-Header {
     text-transform: uppercase;
-    font-family: 'Questrial', sans-serif;
-    font-weight: 100;
-    font-size: calc(var(--sub-heading) * 1.2);
+    font-size: calc(var(--main-heading) * 0.6);
+    font-family: 'Allenoire';
+    margin-bottom: 0;
     padding-bottom: calc(var(--margin-spacing) * 0.3);
     width: 65vw;
     padding-top: calc(var(--margin-spacing) * 0.1);
     padding-bottom: calc(var(--margin-spacing) * 0.2);
-    padding-left: calc(var(--margin-spacing) * 1);
+    padding-left: calc(var(--page-spacing) * 3);
   }
 
-  .Third-Box {
-    border-left: 2px solid black;
-    margin-top: calc(var(--page-spacing) * 2);
-    margin-left: calc(var(--margin-spacing) * 1);
+  .Third-Box-Subheader {
+    text-transform: uppercase;
+    font-family: 'Questrial', sans-serif;
+    font-weight: 100;
+    font-size: calc(var(--sub-heading) * 0.8);
+    padding-left: calc(var(--page-spacing) * 3);
+    padding-bottom: calc(var(--margin-spacing) * 0.3);
+    line-height: calc(var(--line-spacing) * 0.3);
+    width: 55vw;
   }
 
   .Third-Box-P {
     font-family: 'Questrial', sans-serif;
     font-weight: 100;
     font-size: calc(var(--sub-heading) * 0.8);
-    padding-left: calc(var(--margin-spacing) * 1);
+    line-height: calc(var(--page-spacing) * 1.2);
+    width: 55vw;
+    padding-left: calc(var(--page-spacing) * 3);
+  }
+
+  .Gradients-Third-Box {
+    Position: relative;
+    height: 10rem;
+    width: 10rem;
+    border-radius: 50%;
+    display: inline-block;
+    background: radial-gradient(#DE9C94, #EB83A0);
+    filter:blur(1.5rem);
+    align-self: flex-end;
+  }
+
+   /* 4th Box */
+
+   .section-4 {
+    width: 75vw;
+    margin-left: auto;
+    margin-right: auto;
+    padding: calc(var(--page-spacing) * 2);
+    border: 1px solid black;
+  }
+
+  @media print {
+    .section-3 {
+      border: 0;
+    }
+  }
+
+  .Fourth-Box {
+    border-left: 2px solid black;
+    margin-top: calc(var(--page-spacing) * 2);
+    flex-direction: column;
+    display: flex;
+    padding-bottom: calc(var(--margin-spacing) * 0.3);
+    width: 65vw;
+  }
+
+  .Fourth-Box-Header {
+    text-transform: uppercase;
+    font-size: calc(var(--main-heading) * 0.6);
+    font-family: 'Allenoire';
+    width: 65vw;
+    padding-top: calc(var(--margin-spacing) * 0.1);
+    padding-left: calc(var(--page-spacing) * 3);
+  }
+
+  .Fourth-Box-Subheader {
+    text-transform: uppercase;
+    font-size: calc(var(--main-heading) * 1.4);
+    font-family: 'Allenoire';
+    padding-left: calc(var(--page-spacing) * 3);
+    padding-bottom: calc(var(--margin-spacing) * 0.3);
+    line-height: calc(var(--line-spacing) * 0.3);
+    width: 55vw;
+    margin-top: calc(var(--margin-spacing) * 0.3);
+    color: white;
+    -webkit-text-stroke-width: 0.4px;
+    -webkit-text-stroke-color: black;
   }
