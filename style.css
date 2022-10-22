@@ -151,16 +151,6 @@ html,body,article {
     margin-top: 5%;
     margin-bottom: 0;
 
-    /* Gradient Animation */
-
-    background: linear-gradient(-45deg, #FFA800, #FF0000);
-    background-size: 300%;
-
-    /* Clips Gradient into text */
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-
-    animation: move 5s ease-in-out infinite;
   }
 
   @keyframes move {
@@ -172,9 +162,34 @@ html,body,article {
   @media screen and (min-width: 768px) {
     .Header { 
       font-size: calc(var(--body-copy) * 7);
+       /* Gradient Animation */
+
+      background: linear-gradient(-45deg, #FFA800, #FF0000);
+       background-size: 300%;
+
+       /* Clips Gradient into text */
+       -webkit-background-clip: text;
+       -webkit-text-fill-color: transparent;
+
+       animation: move 5s ease-in-out infinite;
     }
   }
 
+  @media screen and (min-width: 375px) {
+    .Header { 
+      font-size: calc(var(--body-copy) * 4);
+       /* Gradient Animation */
+
+      background: linear-gradient(-45deg, #FFA800, #FF0000);
+       background-size: 300%;
+
+       /* Clips Gradient into text */
+       -webkit-background-clip: text;
+       -webkit-text-fill-color: transparent;
+
+       animation: move 5s ease-in-out infinite;
+    }
+  }
   
   .Title-box {
     border-left: 2px solid black;
