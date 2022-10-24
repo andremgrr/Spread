@@ -117,20 +117,45 @@ html,body {
     margin-top: var(--page-spacing);
     margin-bottom: 0px;
 
-       /* Gradient Animation */
-
-    background: linear-gradient(-45deg, #FFA800, #FF0000);
-    background-size: 300%;
-
-       /* Clips Gradient into text */
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-
-    animation: move 5s ease-in-out infinite;
-
   }
 
+
+  @media screen and (min-width: 375px) {
+    H1 { 
+      
+    /* Gradient Animation */
+
+   background: linear-gradient(-45deg, #FFA800, #FF0000);
+   background-size: 300%;
+
+      /* Clips Gradient into text */
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+
+   animation: move 5s ease-in-out infinite;
   
+      
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    H1 { 
+
+    /* Gradient Animation */
+
+   background: linear-gradient(-45deg, #FFA800, #FF0000);
+   background-size: 300%;
+
+      /* Clips Gradient into text */
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+
+   animation: move 5s ease-in-out infinite;
+  
+      
+    }
+  }
+   
   H2 {
     text-transform: uppercase;
     font-size: calc(var(--main-heading) * 0.6);
