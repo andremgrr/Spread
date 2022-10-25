@@ -903,7 +903,7 @@ html,body {
 
   @media print {
     .Fifth-Box-P1 {
-      width: 90vw;
+      width: 60vw;
       font-weight: 300;
       line-height: var(--page-spacing);
     }
@@ -915,7 +915,7 @@ html,body {
 
   @media print {
     .Fifth-Box-P2 {
-      width: 90vw;
+      width: 60vw;
       font-weight: 300;
       line-height: var(--page-spacing);
     }
@@ -927,7 +927,7 @@ html,body {
 
   @media print {
     .Fifth-Box-P3 {
-      width: 90vw;
+      width: 60vw;
       font-weight: 300;
       line-height: var(--page-spacing);
     }
