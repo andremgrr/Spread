@@ -379,7 +379,7 @@ html,body {
 }
 
   .Second-Box-P1 {
-    font-weight: 200;
+    font-weight: 300;
     padding-left: (var(--indent));
     line-height: calc(var(--page-spacing) * 1.2);
     width: 55vw;
@@ -831,4 +831,11 @@ html,body {
     background: radial-gradient(#DE9C94, #EB83A0);
     filter:blur(1.5rem);
     align-self: flex-end;
+  }
+
+
+  footer {
+    width:65vw;
+    margin-left: auto;
+    margin-right: auto;
   }
