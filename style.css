@@ -940,6 +940,12 @@ html,body {
     }
   }
 
+  @media print {
+    .Third-Box-P {
+      width: 80vw;
+    }
+  }
+
   .Gradients-Third-Box {
     Position: relative;
     height: 10rem;
@@ -1041,7 +1047,7 @@ html,body {
 
   @media print {
     .Fourth-Box-Subheader {
-      font-size: calc(var(--main-heading) * 0.65);
+      font-size: calc(var(--main-heading) * 0.7);
     }
   }
 
@@ -1091,7 +1097,7 @@ html,body {
       width: 90vw;
       font-weight: 300;
       line-height: var(--page-spacing);
-      margin-bottom: calc(var(--margin-spacing) * 8) ;
+      margin-bottom: calc(var(--margin-spacing) * 18) ;
     }
   }
 
