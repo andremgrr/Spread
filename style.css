@@ -599,7 +599,7 @@ html,body {
   /* Desktop code for spacing */
   @media screen and (min-width: 768px) {
     .Title-box { 
-    margin: calc(var(--page-spacing) * 4);
+    margin: calc(var(--page-spacing) * 2.5);
       
     }
   }
@@ -675,7 +675,7 @@ html,body {
 
   @media (min-width: 768px) {
     .Second-Box {
-      margin: calc(var(--page-spacing) * 4);
+      margin: calc(var(--page-spacing) * 2.5);
     }
   }
 
@@ -867,7 +867,7 @@ html,body {
 
   @media (min-width: 768px) {
     .Third-Box {
-      margin: calc(var(--page-spacing) * 4);
+      margin: calc(var(--page-spacing) * 2.5);
     }
   }
 
