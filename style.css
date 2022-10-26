@@ -874,6 +874,7 @@ html,body {
   @media print {
     .Third-Box {
       margin-top: var(--page-spacing);
+      margin-bottom: 0;
     }
   }
 
@@ -1037,6 +1038,13 @@ html,body {
      animation: move 5s ease-in-out infinite;
 }
   }
+
+  @media print {
+    .Fourth-Box-Subheader {
+      font-size: calc(var(--main-heading) * 0.65);
+    }
+  }
+
 
   .Fourth-Box-P-Box {
     width: 65vw;
@@ -1209,6 +1217,7 @@ html,body {
   @media print {
     .Fifth-Box-Header {
      margin-top: 0;
+     font-size: calc(var(--main-heading) * 0.6);
     }
   }
 
@@ -1607,7 +1616,7 @@ html,body {
 
   @media print {
     .Seventh-Box-Subheader {
-    font-size: calc(var(--main-heading) * 0.5);
+    font-size: calc(var(--main-heading) * 0.6);
     font-family: 'Allenoire';
     width: 65vw;
     margin-top: 0
