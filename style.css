@@ -212,6 +212,16 @@ html,body {
     font-family: 'Epilogue', sans-serif;
     font-size: var(--font-size);
   }
+
+  a {
+    color: linear-gradient(-45deg, #FFA800, #FF0000);
+  }
+
+  @media print {
+    a {
+      color: black;
+    }
+  }
   
   header,
   footer {
@@ -248,6 +258,18 @@ html,body {
     margin-bottom: calc(var(--page-spacing) * 3);
   }
 
+  @media screen and (min-width: 768px) {
+    .article-section-1 { 
+      background-image: url("Vector 15.png");
+      background-size: 60%;
+      background-position: 97% 5%;
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+    }
+  }
+
+  
+
   .article-section-2 {
     display:flex;
     flex-direction: column;
@@ -258,6 +280,12 @@ html,body {
     border: 1px solid black;
     margin-top: var(--margin-spacing);
     margin-bottom: calc(var(--page-spacing) * 3);
+
+    background-image: url("Vector 16.png");
+    background-size: 60%;
+    background-position: 97% 5%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
   }
 
   .article-section-3 {
@@ -558,7 +586,7 @@ html,body {
 
     /* Gradient Animation */
 
-    background: linear-gradient(-45deg, #FFA800, #FF0000);
+    background: linear-gradient(-45deg, #6546D6, #D050EF);
     background-size: 300%;
 
        /* Clips Gradient into text */
@@ -617,7 +645,7 @@ html,body {
 }
 
 .Second-Box-P-Header:hover{
-  background: linear-gradient(-45deg, #FFA800, #FF0000);
+  background: linear-gradient(-45deg, #6546D6, #D050EF);
      background-size: 300%;
 
      /* Clips Gradient into text */
@@ -695,20 +723,6 @@ html,body {
 
   /* 3rd Box */
 
-  .section-3 {
-    width: 75vw;
-    margin-left: auto;
-    margin-right: auto;
-    padding: calc(var(--page-spacing) * 2);
-    border: 1px solid black;
-  }
-
-  @media print {
-    .section-3 {
-      border: 0;
-    }
-  }
-
 
   .Third-Box {
     border-left: 2px solid black;
@@ -738,13 +752,15 @@ html,body {
     padding-bottom: calc(var(--margin-spacing) * 0.2);
     padding-left: calc(var(--page-spacing) * 3);
   }
+  
+
 
   @media (min-width: 768px) {
     .Third-Box-Header:hover {
 
     /* Gradient Animation */
 
-    background: linear-gradient(-45deg, #ffa800, #FF0000);
+    background: linear-gradient(-45deg, #D32180, #DB92FE);
     background-size: 300%;
 
        /* Clips Gradient into text */
@@ -780,6 +796,7 @@ html,body {
     line-height: var(--page-spacing);
     width: 40vw;
     padding-left: calc(var(--page-spacing) * 3);
+    font-weight: 300;
   }
 
   @media print {
