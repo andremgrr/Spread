@@ -258,7 +258,7 @@ html,body {
     margin-bottom: calc(var(--page-spacing) * 3);
   }
 
-  @media screen and (min-width: 768px) {
+  @media (min-width: 768px) {
     .article-section-1 { 
       background-image: url("Vector 15.png");
       background-size: 60%;
@@ -268,7 +268,15 @@ html,body {
     }
   }
 
-  
+  @media (min-width: 375px) {
+    .article-section-1 { 
+      background-image: url("Vector 15.png");
+      background-size: 60%;
+      background-position: 90% 50%;
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+    }
+  }
 
   .article-section-2 {
     display:flex;
@@ -281,12 +289,28 @@ html,body {
     margin-top: var(--margin-spacing);
     margin-bottom: calc(var(--page-spacing) * 3);
 
-    background-image: url("Vector 16.png");
-    background-size: 60%;
-    background-position: 97% 5%;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
   }
+
+  @media (min-width: 375px) {
+    .article-section-2 { 
+      background-image: url("Vector 16.png");
+      background-size: 60%;
+      background-position: 90% 50%;
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .article-section-2 { 
+      background-image: url("Vector 16.png");
+      background-size: 60%;
+      background-position: 97% 5%;
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+    }
+  }
+
 
   .article-section-3 {
     display:flex;
@@ -430,11 +454,26 @@ html,body {
     padding: calc(var(--page-spacing) * 2);
     border: 1px solid black;
     margin-bottom: calc(var(--page-spacing) * 5);
-    background-image: url("Vector 14.png");
-    background-size: 60%;
-    background-position: 97% 5%;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
+  }
+
+  @media (min-width: 375px) {
+    .title-section { 
+      background-image: url("Vector 14.png");
+      background-size: 60%;
+      background-position: 90% 50%;
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .title-section { 
+      background-image: url("Vector 14.png");
+      background-size: 60%;
+      background-position: 97% 5%;
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+    }
   }
 
   @media print {
