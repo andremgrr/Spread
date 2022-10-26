@@ -1227,6 +1227,12 @@ html,body {
     }
   }
 
+  @media (min-width: 375px) {
+    .Fifth-Box-Header {
+    width: 40vw;
+    }
+  }
+
   .Fifth-Box {
     border-left: 2px solid black;
     margin-top: calc(var(--page-spacing) * 2);
