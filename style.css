@@ -307,7 +307,7 @@ html,body {
     margin-top: var(--margin-spacing);
     margin-bottom: calc(var(--page-spacing) * 3);
   }
-  
+
   @media print {
     .article-section {
       border: 0;
@@ -647,7 +647,7 @@ html,body {
 
   @media (min-width: 768px) {
     .Third-Box {
-      margin: calc(var(--page-spacing) * 4);
+      margin: calc(var(--page-spacing) *0.51);
     }
   }
 
