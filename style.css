@@ -1634,6 +1634,13 @@ html,body {
     }
   }
 
+  @media (min-width: 768px) {
+    .Seventh-Box-P {
+      width: 40vw;
+    font-weight: 300;
+    }
+  }
+
   @media print {
     .Seventh-Box-P {
       width: 70vw;
@@ -1656,6 +1663,12 @@ html,body {
   @media (min-width: 375px) {
     .Seventh-Box-P-SubHeader {
       font-size: calc(var(--page-spacing) * 1.7);
+    }
+  }
+
+  @media (min-width: 768px) {
+    .Seventh-Box-P-SubHeader {
+      width: 45vw;
     }
   }
 
