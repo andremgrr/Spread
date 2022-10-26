@@ -254,6 +254,17 @@ html,body {
     margin-bottom: calc(var(--page-spacing) * 3);
   }
 
+  @media (min-width: 375px) {
+    .article-section-1 { 
+      background-image: url("Vector 15.png");
+      background-size: 60%;
+      background-position: 70% 50%;
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+    }
+  }
+
+
   @media (min-width: 768px) {
     .article-section-1 { 
       background-image: url("Vector 15.png");
@@ -264,16 +275,7 @@ html,body {
     }
   }
 
-  @media (min-width: 375px) {
-    .article-section-1 { 
-      background-image: url("Vector 15.png");
-      background-size: 60%;
-      background-position: 97% 5%;
-      background-attachment: fixed;
-      background-repeat: no-repeat;
-    }
-  }
-
+ 
   .article-section-2 {
     display:flex;
     flex-direction: column;
@@ -291,7 +293,7 @@ html,body {
     .article-section-2 { 
       background-image: url("Vector 16.png");
       background-size: 60%;
-      background-position: 97% 5%;
+      background-position: 70% 50%;
       background-attachment: fixed;
       background-repeat: no-repeat;
     }
@@ -324,7 +326,7 @@ html,body {
     .article-section-3 { 
       background-image: url("Vector 17.png");
       background-size: 60%;
-      background-position: 97% 5%;
+      background-position: 70% 50%;
       background-attachment: fixed;
       background-repeat: no-repeat;
     }
@@ -356,7 +358,7 @@ html,body {
     .article-section-4 { 
       background-image: url("Vector 18.png");
       background-size: 60%;
-      background-position: 97% 5%;
+      background-position: 70% 50%;
       background-attachment: fixed;
       background-repeat: no-repeat;
     }
@@ -388,7 +390,7 @@ html,body {
     .article-section-5 { 
       background-image: url("Vector 19.png");
       background-size: 60%;
-      background-position: 97% 5%;
+      background-position: 70% 50%;
       background-attachment: fixed;
       background-repeat: no-repeat;
     }
@@ -420,7 +422,7 @@ html,body {
     .article-section-6 { 
       background-image: url("Vector 20.png");
       background-size: 60%;
-      background-position: 97% 5%;
+      background-position: 70% 50%;
       background-attachment: fixed;
       background-repeat: no-repeat;
     }
@@ -537,7 +539,7 @@ html,body {
     .title-section { 
       background-image: url("Vector 14.png");
       background-size: 60%;
-      background-position: 97% 5%;
+      background-position: 70% 50%;
       background-attachment: fixed;
       background-repeat: no-repeat;
     }
